@@ -29,8 +29,8 @@ def benchmark_union_find(UFClass, n, pairs):
 
 def main():
     input_files = ["tinyUF.txt", "mediumUF.txt", "largeUF.txt"]
-    uf_classes = [QuickFind, QuickUnion, WeightedQuickUnion, WeightedQuickUnionPathCompression]
-    uf_names = ["QuickFind", "QuickUnion", "WeightedQuickUnion", "WeightedQuickUnionPC"]
+    uf_classes = [WeightedQuickUnion, WeightedQuickUnionPathCompression]
+    uf_names = ["WeightedQuickUnion", "WeightedQuickUnionPC"]
 
     for file_path in input_files:
         print(f"\n=== Running on {file_path} ===")
