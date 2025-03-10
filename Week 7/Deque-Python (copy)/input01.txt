@@ -1,0 +1,10 @@
+Deque() String
+addFirst() Red
+addLast() Blue
+isEmpty()
+size()
+removeLast()
+addLast() Green
+removeFirst()
+addFirst() Yellow
+size()

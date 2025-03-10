@@ -1,0 +1,10 @@
+Deque() Double
+isEmpty()
+addLast() 2.5
+addFirst() 3.5
+size()
+addLast() 4.5
+removeFirst()
+removeLast()
+addFirst() 5.5
+size()

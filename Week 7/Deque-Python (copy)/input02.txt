@@ -1,0 +1,22 @@
+Deque() Double
+isEmpty()
+addFirst() 1.01
+addLast() 2.02
+size()
+addLast() 3.03
+removeFirst()
+addFirst() 4.04
+removeLast()
+removeFirst()
+size()
+Deque() Double
+addLast() 10.10
+isEmpty()
+addFirst() 20.20
+addLast() 30.30
+size()
+removeFirst()
+addFirst() 40.40
+removeLast()
+removeFirst()
+size()

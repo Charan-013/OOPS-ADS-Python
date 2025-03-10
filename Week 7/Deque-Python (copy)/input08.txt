@@ -1,0 +1,10 @@
+Deque() String
+addFirst() Alpha
+isEmpty()
+addLast() Beta
+size()
+addLast() Gamma
+removeFirst()
+removeLast()
+addFirst() Delta
+size()
