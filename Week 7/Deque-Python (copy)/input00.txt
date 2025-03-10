@@ -1,0 +1,21 @@
+Deque() Integer
+isEmpty()
+addLast() 42
+addFirst() 84
+size()
+addLast() 126
+removeFirst()
+removeLast()
+addFirst() 168
+size()
+Deque() Integer
+isEmpty()
+addLast() 412
+addFirst() 814
+size()
+addLast() 12612
+removeFirst()
+removeLast()
+addFirst() 1681
+size()
+toString()

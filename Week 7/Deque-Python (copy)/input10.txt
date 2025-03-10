@@ -1,0 +1,11 @@
+Deque() Integer
+isEmpty()
+addFirst() 5
+addLast() 15
+size()
+removeFirst()
+addLast() 25
+addFirst() 35
+removeLast()
+removeFirst()
+size()

@@ -1,0 +1,4 @@
+Deque is empty
+Deque is empty
+true
+0

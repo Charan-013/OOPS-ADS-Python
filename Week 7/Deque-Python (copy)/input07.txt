@@ -1,0 +1,10 @@
+Deque() Integer
+size()
+addLast() 100
+addFirst() 200
+addLast() 300
+isEmpty()
+removeFirst()
+addFirst() 400
+removeLast()
+size()

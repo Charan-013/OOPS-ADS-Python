@@ -1,0 +1,5 @@
+Deque() Integer
+removeFirst()
+removeLast()
+isEmpty()
+size()

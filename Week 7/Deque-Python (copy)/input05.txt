@@ -1,0 +1,10 @@
+Deque() String
+isEmpty()
+addLast() First
+addFirst() Second
+size()
+addLast() Third
+removeFirst()
+addFirst() Fourth
+removeLast()
+size()
