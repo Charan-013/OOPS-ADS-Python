@@ -1,0 +1,27 @@
+Test 1 passed
+Test 2 passed
+Test 3 passed: element() raised exception on empty queue
+Test 4 passed: remove() raised exception on empty queue
+Test 5 passed: add() returned True for element A
+Test 6 passed: element() returned A
+Test 7 passed: peek() returned A
+Test 8 passed: offer() returned True for element B
+Test 9 passed: offer() returned True for element C
+Test 10 passed: add() raised exception on full queue
+Test 11 passed: offer() returned False on full queue
+Test 12 passed: element() still returned A
+Test 13 passed: remove() returned A
+Test 14 passed: poll() returned B
+Test 15 passed: element() returned C
+Test 16 passed: remove() returned C
+Test 17 passed: peek() returned None on empty queue
+Test 18 passed: poll() returned None on empty queue
+Test 19 passed: element() raised exception on empty queue
+Test 20 passed: remove() raised exception on empty queue
+Test 21 passed: offer() and poll() worked correctly for X
+Test 22 passed: Queue order maintained correctly
+Test 23 passed: add() raised exception when queue is full
+Test 24 passed: offer() returned False when queue is full
+Test 25 passed: Queue functions correctly after removals
+Total tests passed: 25
+Total tests failed: 0
