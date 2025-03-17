@@ -1,11 +1,14 @@
 """
-Authors: [Your Name]
+Authors: [Shiva Charan Reddy Kallem]
 Simulation1: Implements the simulation with a separate queue for each cash register.
 """
 
 import random
 from collections import deque
 from customer import Customer
+
+def customerArrives(arrival_probability):
+    return random.random() < arrival_probability
 
 def simulate_separate_queues(arrival_probability, num_registers, total_minutes):
     # Create a separate queue for each register.
@@ -20,9 +23,16 @@ def simulate_separate_queues(arrival_probability, num_registers, total_minutes):
             #  Use the customerArrives method to determine if a customer
             #  arrives at this particular minute.
             #  If so, add a customer to the queue.
-
-
-
+            if customerArrives(arrival_probability):
+                customer = Customer(current_minute, random.randint(1, 5))
+                shortest_queue_index = 0
+                shortest_length = len(queues[0])
+                for i in range(1, num_registers):
+                    if len(queues[i]) < shortest_length:
+                        shortest_length = len(queues[i])
+                        shortest_queue_index = i
+                queues[shortest_queue_index].append(customer)
+            
             # INSERT CODE HERE
             # Check each register.
             #   If the register is available and there are customers waiting in the queue,
@@ -33,6 +43,19 @@ def simulate_separate_queues(arrival_probability, num_registers, total_minutes):
             #         in the queue before successfully reaching a register
             #     4.  Update the time when this register will be available after
             #         serving this customer.
+            for i in range(num_registers):
+                if registers[i] != None:
+                    cust, remaining_service_time = registers[i]
+                    remaining_service_time -= 1
+                    if remaining_service_time == 0:
+                        registers[i] = None
+                    else:
+                        registers[i] = (cust, remaining_service_time)
+                if registers[i] == None and queues[i]:
+                    cust = queues[i].popleft()
+                    waiting_time = current_minute - cust.arrival_time
+                    waiting_times.append(waiting_time)
+                    registers[i] = (cust, cust.service_time)
     
     average_wait = sum(waiting_times) / len(waiting_times) if waiting_times else 0
     return average_wait

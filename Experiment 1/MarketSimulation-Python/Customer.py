@@ -1,5 +1,5 @@
 """
-Authors: [Your Name]
+Authors: [Shiva Charan Reddy Kallem]
 Customer class representing a customer in the supermarket.
 """
 
