@@ -1,0 +1,5 @@
+Sorted Leaderboard:
+TeamA: Points=15, Wins=5, Losses=3, Draws=2, NoResult=1
+TeamB: Points=15, Wins=5, Losses=3, Draws=2, NoResult=1
+TeamC: Points=15, Wins=5, Losses=3, Draws=2, NoResult=1
+TeamD: Points=15, Wins=5, Losses=3, Draws=2, NoResult=1
