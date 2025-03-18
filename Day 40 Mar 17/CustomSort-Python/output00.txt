@@ -1,0 +1,6 @@
+Sorted Leaderboard:
+TeamW: Points=27, Wins=8, Losses=3, Draws=2, NoResult=0
+TeamZ: Points=27, Wins=8, Losses=3, Draws=2, NoResult=2
+TeamX: Points=27, Wins=8, Losses=4, Draws=3, NoResult=1
+TeamY: Points=27, Wins=8, Losses=4, Draws=2, NoResult=1
+TeamV: Points=25, Wins=7, Losses=2, Draws=5, NoResult=0

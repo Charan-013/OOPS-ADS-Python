@@ -1,0 +1,4 @@
+Sorted Leaderboard:
+TeamX: Points=15, Wins=5, Losses=3, Draws=2, NoResult=0
+TeamY: Points=15, Wins=5, Losses=3, Draws=2, NoResult=0
+TeamZ: Points=15, Wins=5, Losses=3, Draws=2, NoResult=0

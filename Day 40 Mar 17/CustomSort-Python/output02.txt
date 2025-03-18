@@ -1,0 +1,4 @@
+Sorted Leaderboard:
+TeamA: Points=160, Wins=50, Losses=10, Draws=5, NoResult=2
+TeamC: Points=160, Wins=50, Losses=10, Draws=4, NoResult=3
+TeamB: Points=160, Wins=48, Losses=12, Draws=7, NoResult=1
