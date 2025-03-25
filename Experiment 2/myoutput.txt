@@ -1,0 +1,52 @@
+Testing input size: 10
+Selection Sort: 0.000000 seconds
+Insertion Sort: 0.000000 seconds
+Merge Sort: 0.000000 seconds
+Quick Sort: 0.000000 seconds
+--------------------------------------------------
+Testing input size: 100
+Selection Sort: 0.000000 seconds
+Insertion Sort: 0.000000 seconds
+Merge Sort: 0.000000 seconds
+Quick Sort: 0.000000 seconds
+--------------------------------------------------
+Testing input size: 1000
+Selection Sort: 0.041391 seconds
+Insertion Sort: 0.025363 seconds
+Merge Sort: 0.000000 seconds
+Quick Sort: 0.000000 seconds
+--------------------------------------------------
+Testing input size: 10000
+Selection Sort: 4.183129 seconds
+Insertion Sort: 3.734199 seconds
+Merge Sort: 0.019758 seconds
+Quick Sort: 0.013729 seconds
+--------------------------------------------------
+Testing input size: 100000
+Selection Sort: N/A
+Insertion Sort: N/A
+Merge Sort: 0.252914 seconds
+Quick Sort: 0.129793 seconds
+--------------------------------------------------
+Testing input size: 1000000
+Selection Sort: N/A
+Insertion Sort: N/A
+Merge Sort: 3.303359 seconds
+Quick Sort: 1.929313 seconds
+--------------------------------------------------
+Testing input size: 10000000
+Selection Sort: N/A
+Insertion Sort: N/A
+Merge Sort: 43.059677 seconds
+Quick Sort: 30.559042 seconds
+--------------------------------------------------
+Experiment Results (in seconds):
+| Input Size | Selection Sort | Insertion Sort | Merge Sort | Quick Sort |
+|------------|----------------|----------------|------------|------------|
+|         10 | 0.000000       | 0.000000       | 0.000000 | 0.000000 |
+|        100 | 0.000000       | 0.000000       | 0.000000 | 0.000000 |
+|       1000 | 0.041391       | 0.025363       | 0.000000 | 0.000000 |
+|      10000 | 4.183129       | 3.734199       | 0.019758 | 0.013729 |
+|     100000 | N/A            | N/A            | 0.252914 | 0.129793 |
+|    1000000 | N/A            | N/A            | 3.303359 | 1.929313 |
+|   10000000 | N/A            | N/A            | 43.059677 | 30.559042 |
