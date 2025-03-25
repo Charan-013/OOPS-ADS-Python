@@ -1,0 +1,3 @@
+words.txt
+18
+rava
