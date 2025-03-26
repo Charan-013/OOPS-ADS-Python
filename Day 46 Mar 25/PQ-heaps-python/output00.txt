@@ -1,0 +1,7 @@
+Size method works correctly.
+Contains method works correctly for existing element.
+Peek method works correctly.
+Poll method works correctly.
+Remove method works correctly.
+Clear method works correctly.
+Iterator method output: 2 7 8 
