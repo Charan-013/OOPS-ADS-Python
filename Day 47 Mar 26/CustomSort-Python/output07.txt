@@ -1,0 +1,4 @@
+Top 3 teams:
+TeamD: Points=33, Wins=10, Losses=2, Draws=3, NoResult=0
+TeamA: Points=33, Wins=10, Losses=2, Draws=3, NoResult=1
+TeamC: Points=32, Wins=10, Losses=2, Draws=2, NoResult=2
