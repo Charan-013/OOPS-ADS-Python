@@ -1,0 +1,19 @@
+Symbol table is empty initially. (PASS)
+Size is 0 initially. (PASS)
+Size is 4 after inserts. (PASS)
+Value for key 2 is 'two'. (PASS)
+Updated value for key 2 is 'TWO'. (PASS)
+Key 3 is in the table. (PASS)
+Key 3 is removed from the table. (PASS)
+Min key is 1. (PASS)
+Max key is 4. (PASS)
+Floor of 2 is 2. (PASS)
+Ceiling of 2 is 2. (PASS)
+Rank of 2 is 1. (PASS)
+Key at rank 1 is 2. (PASS)
+Min key 1 is deleted. (PASS)
+Max key 4 is deleted. (PASS)
+Keys between 2 and 6 inclusive are 2,5,6. (PASS)
+All keys in sorted order: [2, 5, 6, 7]
+Keys between 2 and 6 in sorted order: [2, 5, 6]
+Testing completed.
