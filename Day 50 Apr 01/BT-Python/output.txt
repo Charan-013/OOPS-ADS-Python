@@ -1,0 +1,26 @@
+----- Count Internal Test -----
+Number of internal nodes = 3
+Number of internal nodes = 3
+Number of internal nodes = 2
+Number of internal nodes = 5
+Number of internal nodes = 8
+Number of internal nodes = 0
+Number of internal nodes = 0
+
+----- Height Test -----
+Tree height = 3
+Tree height = 4
+Tree height = 3
+Tree height = 4
+Tree height = 9
+Tree height = 1
+Tree height = 0
+
+----- Is Perfect Test -----
+Tree is perfect: True
+Tree is perfect: False
+Tree is perfect: False
+Tree is perfect: False
+Tree is perfect: False
+Tree is perfect: True
+Tree is perfect: True
