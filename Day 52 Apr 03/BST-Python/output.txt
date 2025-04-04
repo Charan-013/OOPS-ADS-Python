@@ -1,0 +1,10 @@
+inOrder:
+4 5 6 7 8 10 
+preOrder:
+7 5 4 6 10 8 
+max: 10
+size: 6
+contains 6: True
+contains 112: False
+contains 7: True
+contains 10: True
