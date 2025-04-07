@@ -1,0 +1,21 @@
+Testing levelOrder method
+levelOrder: 8/8 tests passed.
+
+Testing isComplete method
+isComplete: 8/8 tests passed.
+
+Testing countLeaves method
+countLeaves: 8/8 tests passed.
+
+Testing pathSum method
+pathSum: 8/8 tests passed.
+
+Testing validateBST method
+validateBST: 8/8 tests passed.
+
+Testing rangeSearch method
+rangeSearch: 8/8 tests passed.
+
+Testing balance method
+balance: 8/8 tests passed.
+
