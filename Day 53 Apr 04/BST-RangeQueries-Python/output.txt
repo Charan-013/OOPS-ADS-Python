@@ -1,0 +1,19 @@
+Test 1 (empty tree) passed
+Test 2 (size after insertion) passed
+Test 3 (get and contains) passed
+Test 4 (min and max) passed
+Test 5 (floor with existing key) passed
+Test 5 (floor with too small key) passed
+Test 6 (floor2) passed
+Test 7 (ceiling with existing key) passed
+Test 7 (ceiling with too large key) passed
+Test 8 (select) passed
+Test 9 (rank) passed
+Test 10 (keys - all) passed
+Test 11 (keys in range) passed
+Test 12 (size_range) passed
+Test 13 (height) passed
+Test 14 (level order) passed
+Test 15 (delete_min) passed
+Test 16 (delete_max) passed
+Test 17 (delete key) passed
