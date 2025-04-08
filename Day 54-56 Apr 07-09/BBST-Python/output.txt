@@ -1,0 +1,15 @@
+Test is_empty and size (empty) passed
+Test put and size passed
+Test get passed
+Test contains passed
+Test min and max passed
+Test floor and ceiling passed
+Test select passed
+Test rank passed
+Test keys() passed
+Test keys(lo, hi) passed
+Test size(lo, hi) passed
+Test height passed, height: 2
+Test delete_min passed
+Test delete_max passed
+Test delete passed
