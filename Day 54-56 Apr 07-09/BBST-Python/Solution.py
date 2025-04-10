@@ -10,7 +10,7 @@ class Node:
         self.right = None
         self.count = count
 
-class RedBlackBST:
+class BST:
     def __init__(self):
         self.root = None
 
