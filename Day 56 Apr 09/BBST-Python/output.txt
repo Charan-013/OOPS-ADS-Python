@@ -1,0 +1,4 @@
+The tree is a BST.
+The tree has no right-leaning red links and no node is connected to two red links.
+The tree is balanced with respect to black links.
+The tree is a valid Red-Black BST.
