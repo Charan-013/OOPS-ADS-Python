@@ -1,0 +1,119 @@
+Testing zigzag_traversal:
+zigzag_traversal Test 1 passed
+zigzag_traversal Test 2 passed
+zigzag_traversal Test 3 passed
+zigzag_traversal Test 4 passed
+zigzag_traversal Test 5 passed
+zigzag_traversal Test 6 passed
+zigzag_traversal Test 7 passed
+zigzag_traversal Test 8 passed
+
+Testing max_width:
+max_width Test 1 passed
+max_width Test 2 passed
+max_width Test 3 passed
+max_width Test 4 passed
+max_width Test 5 passed
+max_width Test 6 passed
+max_width Test 7 passed
+max_width Test 8 passed
+
+Testing diameter:
+diameter Test 1 passed
+diameter Test 2 passed
+diameter Test 3 passed
+diameter Test 4 passed
+diameter Test 5 passed
+diameter Test 6 passed
+diameter Test 7 passed
+diameter Test 8 passed
+
+Testing lowest_common_ancestor:
+LCA Test 1 passed
+LCA Test 2 passed
+LCA Test 3 passed
+LCA Test 4 passed
+LCA Test 5 passed
+LCA Test 6 passed
+LCA Test 7 passed
+LCA Test 8 passed
+
+Testing kth_smallest:
+kth_smallest Test 1 passed
+kth_smallest Test 2 passed
+kth_smallest Test 3 passed
+kth_smallest Test 4 passed
+kth_smallest Test 5 passed
+kth_smallest Test 6 passed
+kth_smallest Test 7 passed
+kth_smallest Test 8 passed
+
+Testing inorder_successor:
+inorder_successor Test 1 passed
+inorder_successor Test 2 passed
+inorder_successor Test 3 passed
+inorder_successor Test 4 passed
+inorder_successor Test 5 passed
+inorder_successor Test 6 passed
+inorder_successor Test 7 passed
+inorder_successor Test 8 passed
+
+Testing merge_trees:
+merge_trees Test 1 passed
+merge_trees Test 2 passed
+merge_trees Test 3 passed
+merge_trees Test 4 passed
+merge_trees Test 5 passed
+merge_trees Test 6 passed
+merge_trees Test 7 passed
+merge_trees Test 8 passed
+
+Testing find_closest_value:
+find_closest_value Test 1 passed
+find_closest_value Test 2 passed
+find_closest_value Test 3 passed
+find_closest_value Test 4 passed
+find_closest_value Test 5 passed
+find_closest_value Test 6 passed
+find_closest_value Test 7 passed
+find_closest_value Test 8 passed
+
+Testing split_bst:
+split_bst Test 1 passed
+split_bst Test 2 passed
+split_bst Test 3 passed
+split_bst Test 4 passed
+split_bst Test 5 passed
+split_bst Test 6 passed
+split_bst Test 7 passed
+split_bst Test 8 passed
+
+Testing join_bst:
+join_bst Test 1 passed
+join_bst Test 2 passed
+join_bst Test 3 passed
+join_bst Test 4 passed
+join_bst Test 5 passed
+join_bst Test 6 passed
+join_bst Test 7 passed
+join_bst Test 8 passed
+
+Testing find_median:
+find_median Test 1 passed
+find_median Test 2 passed
+find_median Test 3 passed
+find_median Test 4 passed
+find_median Test 5 passed
+find_median Test 6 passed
+find_median Test 7 passed
+find_median Test 8 passed
+
+Testing range_sum_query:
+range_sum_query Test 1 passed
+range_sum_query Test 2 passed
+range_sum_query Test 3 passed
+range_sum_query Test 4 passed
+range_sum_query Test 5 passed
+range_sum_query Test 6 passed
+range_sum_query Test 7 passed
+range_sum_query Test 8 passed
