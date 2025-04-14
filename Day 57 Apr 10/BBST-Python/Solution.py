@@ -71,8 +71,7 @@ class AVL:
             return node
 
         def delete_node(node, key):
-            if not node:
-                return None
+            if not node:return None
             if key < node.key:
                 node.left = delete_node(node.left, key)
             elif key > node.key:
@@ -110,8 +109,7 @@ class AVL:
         result = []
 
         def search_range(node):
-            if not node:
-                return
+            if not node:return
             if low < node.key:
                 search_range(node.left)
             if low <= node.key <= high:
@@ -124,8 +122,7 @@ class AVL:
 
     def aggregate_query(self, low, high):
         def sum_range(node):
-            if not node:
-                return 0
+            if not node:return 0
             total = 0
             if low < node.key:
                 total += sum_range(node.left)
@@ -144,15 +141,15 @@ def main():
         tree = AVL()
         n = int(input())
         for j in range(n):
-            parts = input().split()
-            if parts[0] == "I":
-                tree.insert(parts[1], parts[2])
-            elif parts[0] == "D":
-                tree.delete(parts[1])
-            elif parts[0] == "R":
-                tree.range_query(int(parts[1]), int(parts[2]))
-            elif parts[0] == "A":
-                tree.aggregate_query(int(parts[1]), int(parts[2]))
+            inp = input().split()
+            if inp[0] == "I":
+                tree.insert(inp[1], inp[2])
+            elif inp[0] == "D":
+                tree.delete(inp[1])
+            elif inp[0] == "R":
+                tree.range_query(int(inp[1]), int(inp[2]))
+            elif inp[0] == "A":
+                tree.aggregate_query(int(inp[1]), int(inp[2]))
         print()
 main()
 
