@@ -1,0 +1,65 @@
+Testing maxSumNonAdjacent:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing burningTree:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing hasTripletWithSum:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing bstToDoublyLinkedList:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing longestConsecutive:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing countNodesInRange:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing sortedListToAVL:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing minSumPath:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing sumAtPrimeLevels:
+Test 1 passed
+Test 2 passed
+Test 3 passed
+Test 4 passed
+
+Testing replaceNodeRBTree:
+Test 1 passed
+Test 2 passed
+
+Testing rbTreeHeight:
+Test 1 passed
+Test 2 passed
+
+Testing avlToMaxHeap:
+Test 1 passed
+Test 2 (manual check) passed
