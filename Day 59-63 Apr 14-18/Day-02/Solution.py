@@ -15,55 +15,224 @@ class Node:
 class Day2TreesChallenge:
     # ---------- BT Methods ----------
     def left_view(self, root):
-        pass
+        if root == None: return []
+        lst = []
+        t = [root]
+
+        while t:
+            s = len(t)
+            i = 0
+
+            while i < s:
+                n = t.pop(0)
+                i = i + 1
+                if i == 1:
+                    lst.append(n.val)
+                if n.left:
+                    t.append(n.left)
+                if n.right:
+                    t.append(n.right)
+        
+        return lst
 
     def right_view(self, root):
-        pass
+        if root == None: return []
+        lst = []
+        t = [root]
+
+        while t:
+            s = len(t)
+            i = 0
+
+            while i < s:
+                n = t.pop(0)
+                i = i + 1
+                if i == s:
+                    lst.append(n.val)
+                if n.left:
+                    t.append(n.left)
+                if n.right:
+                    t.append(n.right)
+        return lst
 
     def sum_left_leaves(self, root):
-        pass
+        if root == None: return 0
+        if root and root.left == None: return 0
+        while root and root.left:
+            root = root.left 
+        return root.val
 
     def top_view(self, root):
-        pass
+        d = {}
+        def top(root,dist,lev,d):
+            if root == None: return
+
+            if dist not in d or lev < d[dist][1]:
+                d[dist] = (root.val,lev)
+            
+            top(root.left,dist-1,lev+1,d)
+            top(root.right,dist+1,lev+1,d)
+        top(root,0,0,d)
+        n = []
+        for k in sorted(d.keys()):
+            n.append(d.get(k)[0])
+        return n
 
     # ---------- BST Methods ----------
     def validate_bst(self, root, min_val=float('-inf'), max_val=float('inf')):
-        pass
+        if root == None: return True
+        if root.val <= min_val or root.val >= max_val:
+            return False
+        return (self.validate_bst(root.left, min_val, root.val) and
+                self.validate_bst(root.right, root.val, max_val))
 
     def bst_to_greater_tree(self, root):
-        pass
+        def btg(root,s):
+            if root == None:return s
+            s = btg(root.right,s)
+            root.val += s
+            return btg(root.left,root.val)
+        btg(root,0)
+        return root
 
     def lowest_common_ancestor(self, root, v1, v2):
-        pass
+        if root == None or root.val == v1 or root.val == v2:
+            return root
+        if root.val > v1 and root.val > v2:
+            return self.lowest_common_ancestor(root.left, v1, v2)
+        if root.val < v1 and root.val < v2:
+            return self.lowest_common_ancestor(root.right, v1, v2)
+        return root
 
     def predecessor_successor(self, root, target):
-        pass
+        pred = succ = None
+        current = root
+        while current:
+            if target < current.val:
+                succ = current
+                current = current.left
+            elif target > current.val:
+                pred = current
+                current = current.right
+            else:
+                if current.left:
+                    temp = current.left
+                    while temp.right:
+                        temp = temp.right
+                    pred = temp
+                if current.right:
+                    temp = current.right
+                    while temp.left:
+                        temp = temp.left
+                    succ = temp
+                break
+        return (pred.val if pred else None, succ.val if succ else None)
 
     # ---------- BBST Methods ----------
     def validate_red_black_tree(self, root):
-        pass
+        def is_red_black_tree(node):
+            if node is None:
+                return 1 
+
+            if node.color not in ("red", "black"):
+                return -1
+
+            left_black_height = is_red_black_tree(node.left)
+            right_black_height = is_red_black_tree(node.right)
+
+            if left_black_height == -1 or right_black_height == -1:
+                return -1
+
+            if left_black_height != right_black_height:
+                return -1
+
+            if node.color == "red":
+                if (node.left and node.left.color == "red") or (node.right and node.right.color == "red"):
+                    return -1
+
+            return left_black_height + (1 if node.color == "black" else 0)
+
+        if not root:
+            return True
+        if root.color != "black":
+            return False
+
+        black_height = is_red_black_tree(root)
+        return black_height != -1
 
     # AVL insertion with balancing
     def insert_into_avl(self, root, key):
-        pass
+        if not root:
+            return Node(key)
+        elif key < root.val:
+            root.left = self.insert_into_avl(root.left, key)
+        else:
+            root.right = self.insert_into_avl(root.right, key)
+        root.height = 1 + max(self.get_height(root.left), self.get_height(root.right))
+        balance = self.get_balance(root)
+        if balance > 1:
+            if key < root.left.val:
+                return self.rotate_right(root)
+            else:
+                root.left = self.rotate_left(root.left)
+                return self.rotate_right(root)
+        if balance < -1:
+            if key > root.right.val:
+                return self.rotate_left(root)
+            else:
+                root.right = self.rotate_right(root.right)
+                return self.rotate_left(root)
+        return root
 
     def get_height(self, node):
-        pass
+        return node.height if node else 0
 
     def get_balance(self, node):
-        pass
+        return self.get_height(node.left) - self.get_height(node.right) if node else 0
 
     def rotate_left(self, z):
-        pass
+        y = z.right
+        T2 = y.left
+        y.left = z
+        z.right = T2
+        z.height = 1 + max(self.get_height(z.left), self.get_height(z.right))
+        y.height = 1 + max(self.get_height(y.left), self.get_height(y.right))
+        return y
 
     def rotate_right(self, z):
-        pass
+        y = z.left
+        T3 = y.right
+        y.right = z
+        z.left = T3
+        z.height = 1 + max(self.get_height(z.left), self.get_height(z.right))
+        y.height = 1 + max(self.get_height(y.left), self.get_height(y.right))
+        return y
 
     def height_avl(self, root):
-        pass
+        if not root:
+            return 0
+        return 1 + max(self.height_avl(root.left), self.height_avl(root.right))
 
     def find_median_avl(self, root):
-        pass
+        if not root:
+            return -1
+
+        inorder = []
+
+        def inorder_traversal(node):
+            if not node:
+                return
+            inorder_traversal(node.left)
+            inorder.append(node.val)
+            inorder_traversal(node.right)
+
+        inorder_traversal(root)
+        n = len(inorder)
+        if n == 0:return -1
+        elif n % 2 == 1:
+            return inorder[n // 2]
+        else:
+            return inorder[(n // 2) - 1]
 
 # ------------------------------
 # Main method for testing (Python)
