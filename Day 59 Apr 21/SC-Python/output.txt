@@ -1,0 +1,7 @@
+Test 1 passed: Empty table
+Test 2 passed: put and get
+Test 3 passed: update value
+Test 4 passed: contains
+Test 5 passed: delete
+Test 6 passed: keys
+All Python tests completed.

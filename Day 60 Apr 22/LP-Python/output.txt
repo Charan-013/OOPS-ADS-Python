@@ -1,0 +1,11 @@
+Symbol table is empty initially.
+4 items added successfully. Current size: 4
+Value for 'banana': 2
+'apple' is present in the symbol table.
+Updated 'banana' to 20
+'cherry' has been successfully deleted.
+Key 'fig' not found, as expected.
+Remaining keys in the symbol table:
+banana -> 20
+date -> 4
+apple -> 1
