@@ -1,0 +1,9 @@
+6
+A B C D E F
+6
+F E 18
+D E 15
+A F 6
+B F 11
+C B 7
+E D 1

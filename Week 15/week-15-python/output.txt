@@ -1,0 +1,9 @@
+Test1 SingleNode passed
+Test2 PR0 passed
+Test2 PR1 passed
+Test3 PR0 passed
+Test3 PR1 passed
+Test3 PR2 passed
+Test5 algorithm passed
+Test5 mining passed
+Test5 none passed
